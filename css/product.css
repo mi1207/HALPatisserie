@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%; /* =16px */
+}
+body {
+    min-width: 320px;
+    background-color: #F8F8F8;
+    font-family: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header_top{
+  width: 100%;
+  height: 80px;
+}
+
+.header_content {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navigation ul {
+  display: flex;
+}
+
+.navigation ul li {
+  margin: 0 40px 0 0;
+}
+
+.navigation ul li a {
+text-decoration: none;
+color: #5D3652;
+}
+
+.navigation ul li a:hover {
+text-decoration: underline;
+}
+
+.navigation_link {
+  font-size: 18px;
+}
+
+.responsive_btn {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 0 40px 0 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+.menu_line {
+  background: #5D3652;
+  border-radius: 5px;
+  width: 100%;
+  height: 5px;
+  margin: 4px 0;
+}
+
+.main_image img {
+  width: 100%; 
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_content {
+    display: flex;
+    width: 100%;
+}
+
+.side {
+    margin-top: 75px;
+    width: 20%;
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  position: relative;
+  overflow: auto;
+}
+
+
+
+.side ul li {
+  border: 0.5px solid;
+  border-color: rgba(112, 112, 112, 0.77);
+  text-align: center;
+  background-color: rgba(252, 38, 46, 0.77);
+}
+
+.side ul li a {
+  color: #F8F8F8;
+  text-decoration: none;
+}
+
+.side ul li a:hover {
+  text-decoration: underline;
+}
+
+
+.side_color_red li {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  
+}
+
+
+ul .side_color_white  li {
+  background-color: #F8F8F8;
+} 
+
+ul .side_color_white li a {
+  color: #707070;
+  text-decoration: none;
+}
+
+ul .side_color_white li a:hover {
+  text-decoration: underline;
+}
+
+.product_list {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+
+.product_list h2 {
+  width: 100%;
+  color: #5D3652;
+}
+
+.product_img {
+  width: 27%;
+  margin-bottom: 30px;
+  
+}
+
+.product_img a {
+  text-decoration: none;
+}
+
+.product_img a:hover {
+  text-decoration: underline #5D3652;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
+.product_img img {
+  width: 100%;
+}
+
+.product_img h3 {
+  font-size: 15px;
+  text-align: center;
+  color: #333333;
+}
+
+.footer_top_page {
+  width: 100%;
+  padding: 40px 0;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+
+
+  @media screen and (max-width: 768px) {
+    .responsive_btn {
+      display: flex;
+    }
+    .header {
+      position: relative;
+    }
+    .navigation {
+      background: #F8F8F8;
+      width: 100%;
+      height: 100vh;
+      padding: 80px 0 0 0;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      transition: .5s;
+    }
+    .navigation ul {
+      display: block;
+      text-align: center;
+    }
+    .navigation ul li {
+      margin: 0 0 40px;
+      text-align: center;
+    }
+    .navigation_link {
+      font-size: 20px;
+    }
+
+    .side {
+      display: none;
+    }
+
+    .product_list {
+      margin: 0 10px;
+    }
+
+    .product_list h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .product_img {
+      width: 50%;
+      
+    }
+
+    .product_img h3 {
+      font-size: 25px;
+    }
+
+  }
+
+    .menu_active {
+        right: 0;
+    }
+
+    @media screen and (max-width: 480px) {
+
+      .product_list h2 {
+        font-size: 25px;
+      }
+
+      .product_list h3 {
+        font-size: 15px;
+      }
+
+    }
